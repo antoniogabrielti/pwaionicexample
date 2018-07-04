@@ -1,0 +1,13 @@
+{
+  "name": "BitParking",
+  "short_name": "BitParking",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/imgs/logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#fbff2b",
+  "theme_color": "#fbff2b"
+}

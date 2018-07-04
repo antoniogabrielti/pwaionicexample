@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Top 10 Estacionamentos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    Você selecionou o <b>{{selectedItem.title}}</b>
+  </div>
+  <ion-img align="center" width="400" height="200" src="http://www.stevensegallery.com/400/300"></ion-img>
+
+</ion-content>
